@@ -24,3 +24,7 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  board.all? do |look| {look == "X" || look == "O"}
+end
